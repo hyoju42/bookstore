@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>교보문고</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <!-- 제일 위 광고 -->
+            <div class="headAd">
+                <img src="./img/head1.jpg" alt="headAd">
+            </div>
+            <!-- 메뉴창 -->
+            <div class="head1">
+                <nav>
+                    <ul>
+                        <li id="white"></li>
+                        <li id="Menu1">교보문고</li>
+                        <li id="Menu2">eBook</li>
+                        <li id="Menu3">sam</li>
+                        <li id="Menu4">핫트렉스</li>
+                        <li id="Menu5">바로출판</li>
+                    </ul>
+                </nav>
+                <nav class="headLog">
+                    <ul class="log">
+                        <li>회원가입</li>
+                        <li>로그인</li>
+                        <li class="">회원혜택</li>
+                        <li>주문배송</li>
+                        <li>매장안내</li>
+                        <li>고객센터</li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- 검색창 -->
+            <div id="head2">
+                <div id="head2_1">
+                    <div class="logo">
+                        <img src="./img/logo.svg" class="logo">
+                    </div>
+                    <div class="search">
+                        <p>통합검색</p>
+                        <input type="text" id="search_input" placeholder="첫 내한 전시 화가 웨인 티보 아트북">
+                        <button id="search_btn">
+                            <div>
+                                <img src="./img/search.png" >
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="headIcon">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <!-- 메뉴창 -->
+            <div id="head3">
+                <div class="head3_1">
+                    <div>
+                        <img src="./img/list.png">
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>감초엽X펩톤</li>
+                            <li>오디세이</li>
+                            <li>베스트</li>
+                            <li>이벤트</li>
+                            <li>새취향</li>
+                            <li>바로펀딩</li>
+                            <li>신상품</li>
+                            <li>PICKS</li>
+                            <li>컬처라운지</li>
+                            <button>+</button>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="head3_2">
+                    <nav>
+                        <ul>
+                            <li>오늘의 미션</li>
+                            <li>할인혜택</li>
+                            <li>최후의 1인은?</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- 슬라이더1 -->
+        <div id="slider1">
+            <div>
+                <!-- swiper -->
+                <div class="slider1_1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/slider1_1_1.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider1_1_2.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider1_1_3.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="autoplay-progress">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <!-- swiper -->
+                <div class="slider1_2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/slider1_2_1.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider1_2_2.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider1_2_3.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="autoplay-progress">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- 카테고리 -->
+        <section id="slideUnder">
+            <div>
+                <ul>
+                    <li>혜택・이벤트</li>
+                    <li>오늘만특가</li>
+                    <li>APP혜택</li>
+                    <li>기프트카드</li>
+                    <li>바로출판</li>
+                    <li>이달의 책</li>
+                    <li>손글씨대회</li>
+                    <li>오늘의굿즈</li>
+                    <li>트렌드+</li>
+                    <li>인물&작품</li>
+                </ul>
+            </div>
+            <div id="misson">
+                <img src="./img/misson.jpg">
+            </div>
+        </section>
+
+        <!-- 오늘의 선택 &슬라이드2 -->
+        <div id="slider2">
+            <div id="today">
+                <div id="today1">
+                    <h2>오늘의 선택</h2>
+                    <ul>
+                        <li>국내도서</li>
+                        <li>외국도서</li>
+                        <li>eBook</li>
+                        <li>sam</li>
+                        <li>핫트랙스</li>
+                        <li>교보only</li>
+                    </ul>
+                </div>
+                <h5>더보기+</h5>                   
+            </div>
+        </div>
+
+        <!-- 광고창 -->
+        <section id="ad2">
+            <div id="ad2_1">
+                <img src="./img/ad2_1.png">
+            </div>
+            <div id="ad2_2">
+                <img src="./img/ad2_2.png">
+            </div>
+        </section>
+
+        <!-- Md선택&슬라이드4 -->
+        <div id="slider4">
+            <div id="md">
+                <div id="md1">
+                    <h2>MD들이 신중하게 골랐어요</h2>
+                    <ul>
+                        <li>국내도서</li>
+                        <li>외국도서</li>
+                        <li>eBook</li>
+                        <li>sam</li>
+                        <li>핫트랙스</li>
+                        <li>교보only</li>
+                    </ul>
+                </div>
+                <h5>더보기+</h5>                   
+            </div>
+        </div>
+
+        <!-- 출판사&슬라이더X -->
+        <div id="sliderx">
+            <div id="gobo">
+                <h2>출판사에서 자신있게 추천해요</h2>
+                <h5>더보기+</h5>                   
+            </div>
+        </div>
+
+        <!-- 트렌드&슬라이더5 -->
+        <div id="slider5">
+            <div id="trend">
+                <h2>트렌드+가 지금 읽을 책을 골랐어요</h2>
+                <h5>더보기+</h5>                   
+            </div>
+        </div>
+
+        <!-- 북 퍼포먼스&슬라이더6 -->
+        <div id="slider6">
+            <div id="bookper">
+                <h2>북 퍼포먼스 예능 읽는 사람들</h2>
+                <h5>더보기+</h5>                   
+            </div>
+        </div>
+
+        <!-- 광고창 -->
+        <section id="ad3">
+            <div id="ad3_1">
+                <img src="./img/Ad3_1.png">
+            </div>
+            <div id="ad3_2">
+                <img src="./img/Ad3_2.png">
+            </div>
+        </section>
+
+        <!-- 잘 나가는&슬라이더8 -->
+        <div id="slider8">
+            <div id="good">
+                <h2>나만의 취향으로 가득 채운 책상 풍경</h2>
+                <h5>더보기+</h5>                   
+            </div>
+        </div>
+
+        <!-- 교보문고 만듦&슬라이더9 -->
+        <div id="slider9">
+            <div id="gobom">
+                <h2>교보문고가 만들었어요</h2>
+                <h5>더보기+</h5>                   
+            </div>
+        </div>
+
+        <!-- 사람들 찾음&슬라이더X -->
+        <div id="sliderxx">
+            <div id="people">
+                <h2>사람들이 많이 찾고 있어요</h2>                  
+            </div>
+        </div>
+
+        <!-- 실시간 AI 추천 &슬라이더11 -->
+        <div id="slider11">
+            <div id="nowai">
+                <h2>실시간으로 AI가 추천해드려요</h2>                  
+            </div>
+        </div>
+
+        <!-- ai추천 &슬라이드12 -->
+        <div id="slider12">
+            <div id="ai">
+                <div id="aipick">
+                    <h2>AI 추천 Picks</h2>
+                </div>
+                <h5>더보기+</h5>                   
+            </div>
+        </div>
+
+
+
+        <!-- 바로출판&슬라이더14 -->
+        <div id="slider14">
+            <div id="baro">
+                <h2>바로출판POD</h2>
+                <h5>더보기+</h5>                   
+            </div>
+        </div>
+
+        <!-- 교보문고에서만&슬라이더15 -->
+        <div id="slider15">
+            <div id="onlygobo">
+                <h2>교보문고에서만 만날 수 있어요</h2>
+                <h5>더보기+</h5>                   
+            </div>
+        </div>
+
+        <!-- 광고창 -->
+        <section id="ad4">
+            <div id="ad4_1">
+                <img src="./img/ad4.png">
+            </div>
+        </section>
+
+        <!-- CASTing&슬라이더16 -->
+        <div id="slider16">
+            <div id="cast">
+                <h2>CASTing</h2>
+                <h5>더보기+</h5>                 
+            </div>
+        </div>
+
+        <!-- Md선택&슬라이드4 -->
+        <div id="slider17">
+            <div id="event">
+                <div id="event1">
+                    <h2>이벤트의 정성이 달라요</h2>
+                    <ul>
+                        <li>교보문고</li>
+                        <li>eBook</li>
+                        <li>핫트렉스</li>
+                    </ul>
+                </div>
+                <h5>더보기+</h5>                   
+            </div>
+        </div>
+
+        
+        <footer>
+            <div id="foot1">
+                <div>
+                    <ul>
+                        <li>공지사항</li>
+                        <li>회원등급 산정 순수구매액'교보e캐시'적용 기준 변경 안내</li>
+                        <li>당첨자발표</li>
+                        <li>[인문/교양]이정모 작가 '극한 진화의 세계' 랜선팬사인회 당첨자 발표</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="foot2">
+                <div id="foot2_1">
+                    <div id="foot2_1_1">
+                        <div class="logo">
+                            <img src="./img/logo.svg">
+                        </div>
+                        <div class="logo2">
+                            <img src="./img/KCSI.svg" alt="">
+                        </div>
+                    </div>
+                    <div id="foot2_1_2">
+                        <nav>
+                            <ul>
+                                <li>회사소개</li>
+                                <li>이용약관</li>
+                                <li>개인정보처리방침</li>
+                                <li>청소년보호정책</li>
+                                <li>대량구매서비스</li>
+                                <li>협력사여러분</li>
+                                <li>채용정보</li>
+                                <li>광고소개</li>
+                            </ul>
+                        </nav>
+                        <div>
+                            <div>
+                                <ul>
+                                    <li>(주)교보문고</li>
+                                    <li>서울특별시 종로구 종로1</li>
+                                    <li>대표이사 : 허정도</li>
+                                    <li>사업자등록번호 : 102-81-11670</li>
+                                    <button>사업자정보확인 > </button>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>대표전화(발신자부담) : 1544-1900(교보문고)・1661-1112(핫트랙스)</li>
+                                    <li>FAX : 0502-987-5711(지역번호 공통)</li>
+                                </ul>
+                            </div>
+                            <p>서울틀별시 통신판매업신고번호 : 제 653호</p>
+                        </div>
+                        <p>© KYOBO BOOK CENTRE</p>
+                    </div>
+                </div>
+                <div id="foot2_2">
+                    <div id="foot2_2_1">
+                        <ul>
+                            <button>Family Site</button>
+                            <button>SNS 바로가기 </button>
+                        </ul>
+                    </div>
+                    <div id="foot2_2_2">
+                        <div>
+                            <p>토스페이먼츠 구매 안전서비스</p>
+                            <button>서비스가입확인 ></button>
+                        </div>
+                        <p>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 토스페이먼츠의 구매안전서비스를 이용하실 수 있습니다.</p>
+                    </div>
+                    <div id="foot2_2_3">
+                        <div id="ISMSmark">
+                            <img src="./img/ISMS.png">
+                            <p>
+                                정보보호관리체계
+                                ISMS인증획득
+                            </p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>[인증범위] 인터넷 교보문고 및 브랜드 서비스 운영</li>
+                                <li>[유효기간] 2023.11.15~2026.11.14</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/book.js"></script>
+    
+    </body>
+    
+    </html>
