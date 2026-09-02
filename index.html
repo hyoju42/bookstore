@@ -22,10 +22,11 @@
             <div class="headAd">
                 <img src="./img/head1.jpg" alt="headAd">
             </div>
+
             <!-- 메뉴창 -->
             <div class="head1">
                 <nav>
-                    <ul>
+                    <ul class="menu">
                         <li id="white"></li>
                         <li id="Menu1">교보문고</li>
                         <li id="Menu2">eBook</li>
@@ -45,27 +46,31 @@
                     </ul>
                 </nav>
             </div>
+
             <!-- 검색창 -->
             <div id="head2">
                 <div id="head2_1">
                     <div class="logo">
                         <img src="./img/logo.svg" class="logo">
                     </div>
-                    <div class="search">
-                        <p>통합검색</p>
+                    <div id="search">
+                        <div id="searchp">통합검색</div>
                         <input type="text" id="search_input" placeholder="첫 내한 전시 화가 웨인 티보 아트북">
-                        <button id="search_btn">
-                            <div>
-                                <img src="./img/search.png" >
-                            </div>
-                        </button>
+                        <div id="sicon">
+                            <img src="./img/search.png">
+                        </div> 
                     </div>
                 </div>
-                <div class="headIcon">
-                    <div></div>
-                    <div></div>
+                <div id="head2_2">
+                    <div id="cart">
+                        <img src="./img/cart.png">
+                    </div>
+                    <div id="login">
+                        <img src="./img/login.png"> 
+                    </div>
                 </div>
             </div>
+
             <!-- 메뉴창 -->
             <div id="head3">
                 <div class="head3_1">
@@ -74,16 +79,17 @@
                     </div>
                     <nav>
                         <ul>
-                            <li>감초엽X펩톤</li>
-                            <li>오디세이</li>
+                            <li class="tgreen">감초엽X펩톤</li>
+                            <li class="tgreen">오디세이</li>
                             <li>베스트</li>
                             <li>이벤트</li>
-                            <li>새취향</li>
+                            <li class="tgreen">주말특가</li>
                             <li>바로펀딩</li>
                             <li>신상품</li>
                             <li>PICKS</li>
-                            <li>컬처라운지</li>
-                            <button>+</button>
+                            <li>컬처라운지
+                                <button>+</button>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -101,9 +107,9 @@
 
         <!-- 슬라이더1 -->
         <div id="slider1">
-            <div>
+            <div id="slider1_1">
                 <!-- swiper -->
-                <div class="slider1_1">
+                <div class="swiper swiper1_1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="./img/slider1_1_1.jpg">
@@ -117,54 +123,78 @@
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                    <div class="autoplay-progress">
-                        <svg viewBox="0 0 48 48">
-                            <circle cx="24" cy="24" r="20"></circle>
-                        </svg>
-                        <span></span>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-            <div>
-                <!-- swiper -->
-                <div class="slider1_2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./img/slider1_2_1.jpg">
+            <div id="slider1_2">
+                <div id="swiper slider1_2">
+                    <!-- swiper -->
+                    <div class="swiper swiper1_2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="./img/slider1_2_1.jpg">
+                                    <p>바로펀딩</p>
+                                    <h6>
+                                        부동산 가격표 뒤<br>도시를 읽는 안목!
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="./img/slider1_2_2.jpg">
+                                    <p>바로펀딩</p>
+                                    <h6>일본 아마존 분야 1위!<br>초고속 주식 투자법</h6>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="./img/slider1_2_3.jpg">
+                                    <p>바로펀딩</p>
+                                    <h6>공부에도<br>가속도가 붙을 수 있다!</h6>
+                                </div>
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="./img/slider1_2_2.jpg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/slider1_2_3.jpg">
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="autoplay-progress">
-                        <svg viewBox="0 0 48 48">
-                            <circle cx="24" cy="24" r="20"></circle>
-                        </svg>
-                        <span></span>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
         </div>
-        
 
         <!-- 카테고리 -->
         <section id="slideUnder">
             <div>
                 <ul>
-                    <li>혜택・이벤트</li>
-                    <li>오늘만특가</li>
-                    <li>APP혜택</li>
-                    <li>기프트카드</li>
-                    <li>바로출판</li>
-                    <li>이달의 책</li>
-                    <li>손글씨대회</li>
-                    <li>오늘의굿즈</li>
-                    <li>트렌드+</li>
-                    <li>인물&작품</li>
+                    <li>
+                        <img src="./img/menu1.png" class="menu">
+                        혜택・이벤트</li>
+                    <li>
+                        <img src="./img/menu2.png" class="menu">
+                        오늘만특가</li>
+                    <li>
+                        <img src="./img/menu3.png" class="menu">
+                        APP혜택</li>
+                    <li>
+                        <img src="./img/menu4.png" class="menu">
+                        기프트카드</li>
+                    <li>
+                        <img src="./img/menu5.png" class="menu">
+                        바로출판</li>
+                    <li>
+                        <img src="./img/menu6.png" class="menu">
+                        이달의 책</li>
+                    <li>
+                        <img src="./img/menu7.png" class="menu">
+                        손글씨대회</li>
+                    <li>
+                        <img src="./img/menu8.png" class="menu">
+                        오늘의굿즈</li>
+                    <li>
+                        <img src="./img/menu9.png" class="menu">
+                        트렌드+</li>
+                    <li>
+                        <img src="./img/menu10.png" class="menu">
+                        인물&작품</li>
                 </ul>
             </div>
             <div id="misson">
@@ -186,7 +216,52 @@
                         <li>교보only</li>
                     </ul>
                 </div>
-                <h5>더보기+</h5>                   
+                <h5>더보기+</h5>
+            </div>
+            <div id="swiper2">
+                <!-- swiper -->
+                <div class="swiper swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
         </div>
 
@@ -216,6 +291,27 @@
                 </div>
                 <h5>더보기+</h5>                   
             </div>
+            <div id="swiper4">
+                <!-- swiper -->
+                <div class="swiper swiper4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
         </div>
 
         <!-- 출판사&슬라이더X -->
@@ -223,6 +319,14 @@
             <div id="gobo">
                 <h2>출판사에서 자신있게 추천해요</h2>
                 <h5>더보기+</h5>                   
+            </div>
+            <div id="gobobox">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
             </div>
         </div>
 
@@ -232,6 +336,27 @@
                 <h2>트렌드+가 지금 읽을 책을 골랐어요</h2>
                 <h5>더보기+</h5>                   
             </div>
+            <div id="swiper5">
+                <!-- swiper -->
+                <div class="swiper swiper5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
         </div>
 
         <!-- 북 퍼포먼스&슬라이더6 -->
@@ -239,6 +364,27 @@
             <div id="bookper">
                 <h2>북 퍼포먼스 예능 읽는 사람들</h2>
                 <h5>더보기+</h5>                   
+            </div>
+            <div id="swiper6">
+                <!-- swiper -->
+                <div class="swiper swiper6">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
         </div>
 
@@ -252,11 +398,80 @@
             </div>
         </section>
 
-        <!-- 잘 나가는&슬라이더8 -->
+        <!-- 나만의 취향&슬라이더8 -->
         <div id="slider8">
-            <div id="good">
+            <div id="mine">
                 <h2>나만의 취향으로 가득 채운 책상 풍경</h2>
                 <h5>더보기+</h5>                   
+            </div>
+            <div id="swiper8">
+                <!-- swiper -->
+                <div class="swiper swiper8">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="mineslider">
+                                <img src="./img/mine/mine1.jpg">
+                            <h5>[국내배송] 소니WH-1000SM6 ANC 블루투스...</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mineslider">
+                                <img src="./img/mine/mine2.jpg">
+                            <h5>[교보단독] 스테들러 스터디팩 6종 세트</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mineslider">
+                                <img src="./img/mine/mine3.jpg">
+                            <h5>[소진특가] 소이믹스 사피아노 가죽 북커버+북마크</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mineslider">
+                                <img src="./img/mine/mine4.jpg">
+                            <h5>[1+1] 스테들러 삼각 화인라이너 20색/하늘색</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mineslider">
+                                <img src="./img/mine/mine5.jpg">
+                            <h5>바른자세 독서 뜨개 쿠션 노트북 레벨업쿠션150/170</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mineslider">
+                                <img src="./img/mine/mine6.jpg">
+                            <h5>프린텍 무선 노잉크 휴대용 프린터 PWP-300D</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mineslider">
+                                <img src="./img/mine/mine7.jpg">
+                            <h5>노르잇 투명독서대 높이조절 PR01A</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mineslider">
+                                <img src="./img/mine/mine8.jpg">
+                            <h5>[교보단독] 이상한 나라의 엘리스 에디션 만년필</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mineslider">
+                                <img src="./img/mine/mine9.jpg">
+                            <h5>[교보문고X시이닷] 작가의 키보드 - 이슬아 편 (무선)</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mineslider">
+                                <img src="./img/mine/mine10.jpg">
+                            <h5>[로이텀] 불렛저널 미디엄 노트 퍼플</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
         </div>
 
@@ -266,12 +481,41 @@
                 <h2>교보문고가 만들었어요</h2>
                 <h5>더보기+</h5>                   
             </div>
+            <div id="swiper9">
+                <!-- swiper -->
+                <div class="swiper swiper9">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
         </div>
 
         <!-- 사람들 찾음&슬라이더X -->
         <div id="sliderxx">
             <div id="people">
                 <h2>사람들이 많이 찾고 있어요</h2>                  
+            </div>
+            <div id="peoplebox">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
             </div>
         </div>
 
@@ -280,25 +524,193 @@
             <div id="nowai">
                 <h2>실시간으로 AI가 추천해드려요</h2>                  
             </div>
+            <div id="aibox">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
         </div>
 
         <!-- ai추천 &슬라이드12 -->
         <div id="slider12">
-            <div id="ai">
-                <div id="aipick">
-                    <h2>AI 추천 Picks</h2>
+            <div id="slider12_1">
+                <div id="ai">
+                    <div id="aipick">
+                        <img src="./img/aipick.png">
+                        <pre>   </pre>
+                        <div id="aitext">발견의 기쁨을 선물합니다. 취향을 분석해 꼭 맞는 책을 추천해 드릴게요!</div>
+                        <button>로그인하고 더 많은 추천 받기</button>
+                    </div>
+                    <h5>더보기+</h5>
                 </div>
-                <h5>더보기+</h5>                   
+            </div>
+            <div id="aipickbox">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
             </div>
         </div>
 
-
+        <!-- 베스트 -->
+        <section id="best">
+            <div id="besttext">
+                <div id="bestlist">
+                    <h3>베스트</h3>
+                    <ul class="booktab">
+                        <li>전체</li>
+                        <li>국내도서</li>
+                        <li>외국도서</li>
+                        <li>eBook</li>
+                        <li>sam</li>
+                        <li>핫트랙스</li>
+                        <li>교보only</li>
+                    </ul>
+                    <h6>스테디셀러</h6>
+                    <ul class="booktab">
+                        <li>국내도서</li>
+                        <li>외국도서</li>
+                    </ul>
+                </div>
+                <h5>더보기+</h5>
+            </div>
+            <div id="bestarea">
+                <article id="tab1">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </article>
+                <article id="tab2">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </article>
+                <article id="tab3">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </article>
+                <article id="tab4">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </article>
+                <article id="tab5">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </article>
+                <article id="tab6">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </article>
+                <article id="tab7">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </article>
+                <article id="tab8">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </article>
+                <article id="tab9">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </article>
+            </div>
+        </section>
 
         <!-- 바로출판&슬라이더14 -->
         <div id="slider14">
             <div id="baro">
                 <h2>바로출판POD</h2>
                 <h5>더보기+</h5>                   
+            </div>
+            <div id="swiper14">
+                <!-- swiper -->
+                <div class="swiper swiper14">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
         </div>
 
@@ -307,6 +719,57 @@
             <div id="onlygobo">
                 <h2>교보문고에서만 만날 수 있어요</h2>
                 <h5>더보기+</h5>                   
+            </div>
+            <div id="swiper15">
+                <!-- swiper -->
+                <div class="swiper swiper15">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/goboonly/only1.jpg">
+                            <h5>시네마틱 클래스-씨네뮤지엄: 프라도 미술관</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/goboonly/only2.jpg">
+                            <h5>친절한 스포츠-F1, 이름만 들어본 당신을 위한 90분</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/goboonly/only3.jpg">
+                            <h5>2026 명강의 Big10-송길영</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/goboonly/only4.jpg">
+                            <h5>[단품] 친절한 철학-인간을 이해하는 철학</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/goboonly/only5.jpg">
+                            <h5>[읽고 쓰는 사람들] 강원국의 책쓰기 수업 2기-모두가...</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/goboonly/only6.jpg">
+                            <h5>시네마틱 클래스-씨네뮤지엄:바티칸 박물관</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/goboonly/only7.jpg">
+                            <h5>[단품] 친절한 에디터-한국에서 만나는 현대미술거장...</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
         </div>
 
@@ -323,35 +786,119 @@
                 <h2>CASTing</h2>
                 <h5>더보기+</h5>                 
             </div>
+            <div id="swiper16">
+                <!-- swiper -->
+                <div class="swiper swiper16">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/cast/cast1.jpg">
+                            <h5>『그랬다고 적었다』김애란 “문장의 여백, 작가가 쓰지 않은 것의 의...</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/cast/cast2.jpg">
+                            <h5>나약하지만 서로 닿아있는 사람들의 이야기『새들의 사회성』편...</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/cast/cast3.jpg">
+                            <h5>경계 없이 넘나드는 K-공간의 매력『건축의 K』노은주•임형남</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/cast/cast4.jpg">
+                            <h5>"바라건대 서로가 서로의 호위가 될 수 있다면"『바라건대』한유주</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/cast/cast5.jpg">
+                            <h5>『극한 진화의 세계』이정모, 인간은 절대 살 수 없는 곳에서 진...</h5>
+                            </div></div>
+                        <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/cast/cast6.jpg">
+                            <h5>모네, 피카소, 엔디 워홀...허무하게 사라져버린 도둑맞은 세계 명작</h5>
+                            </div></div>
+                         <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/cast/cast7.jpg">
+                            <h5>하지형 성우와 같이 읽을까요? 오늘부터 1권!</h5>
+                            </div></div>
+                         <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/cast/cast8.jpg">
+                            <h5>국립중앙박물관 큐레이터가 말해주는 관람 꿀팁과 꼭 봐야 할 애...</h5>
+                            </div></div>
+                         <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/cast/cast9.jpg">
+                            <h5>오컬트의 신, 오컬트의 권위자, 오컬트의 지배자! 이우혁 작가와 애...</h5>
+                            </div></div>
+                         <div class="swiper-slide">
+                            <div class="castswiper">
+                            <img src="./img/cast/cast10.jpg">
+                            <h5>다른 과학에 대한 가능성『STS 개념어 사전』홍성욱</h5>
+                            </div></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
         </div>
 
-        <!-- Md선택&슬라이드4 -->
+        <!-- 이벤트&슬라이더17 -->
         <div id="slider17">
             <div id="event">
                 <div id="event1">
                     <h2>이벤트의 정성이 달라요</h2>
-                    <ul>
-                        <li>교보문고</li>
-                        <li>eBook</li>
-                        <li>핫트렉스</li>
-                    </ul>
                 </div>
                 <h5>더보기+</h5>                   
+            </div>
+            <div id="swiper17">
+                <!-- swiper -->
+                <div class="swiper swiper17">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/event/event1_1.png"></div>
+                        <div class="swiper-slide"><img src="./img/event/event1_2.jpg"></div>
+                        <div class="swiper-slide"><img src="./img/event/event1_3.jpg"></div>
+                        <div class="swiper-slide"><img src="./img/event/event2_1.jpg"></div>
+                        <div class="swiper-slide"><img src="./img/event/event2_2.jpg"></div>
+                        <div class="swiper-slide"><img src="./img/event/event2_3.png"></div>
+                        <div class="swiper-slide"><img src="./img/event/event3_1.jpg"></div>
+                        <div class="swiper-slide"><img src="./img/event/event3_2.jpg"></div>
+                        <div class="swiper-slide"><img src="./img/event/event3_3.png"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
 
         
         <footer>
+            <hr>
             <div id="foot1">
-                <div>
-                    <ul>
-                        <li>공지사항</li>
-                        <li>회원등급 산정 순수구매액'교보e캐시'적용 기준 변경 안내</li>
-                        <li>당첨자발표</li>
-                        <li>[인문/교양]이정모 작가 '극한 진화의 세계' 랜선팬사인회 당첨자 발표</li>
-                    </ul>
-                </div>
+                <ul>
+                    <li>
+                        <h4>공지사항</h4>
+                    </li>
+                    <li>회원등급 산정 순수구매액'교보e캐시'적용 기준 변경 안내</li>
+                </ul>
+            
+                <ul>
+                    <li>
+                        <h4>당첨자발표</h4>
+                    </li>
+                    <li>[인문/교양]이정모 작가 '극한 진화의 세계' 랜선팬사인회 당첨자 발표</li>
+                </ul>            
             </div>
+            <hr>
             <div id="foot2">
                 <div id="foot2_1">
                     <div id="foot2_1_1">
@@ -375,6 +922,8 @@
                                 <li>광고소개</li>
                             </ul>
                         </nav>
+                    </div>
+                    <div id="foot2_1_3">
                         <div>
                             <div>
                                 <ul>
@@ -427,7 +976,6 @@
                     </div>
                 </div>
             </div>
-
         </footer>
     </div>
 
