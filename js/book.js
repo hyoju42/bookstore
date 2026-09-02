@@ -4,7 +4,7 @@ async function fetchBooks(query) {
     const params = new URLSearchParams({
         query,
         target: 'title',
-        size: 20
+        size: 30
     })
     console.log(params);
 
@@ -27,7 +27,7 @@ async function bookData() {
             { query: "장편소설", sectionId: "gobobox" },
             { query: "오늘", sectionId:"swiper2"},
             { query: "양장", sectionId: "swiper4"},
-            { query: "트렌드", sectionId: "swiper5" },
+            { query: "요즘", sectionId: "swiper5" },
             { query: "예능", sectionId: "swiper6" },
             { query: "교보문고", sectionId: "swiper9" },
             { query: "베스트셀러", sectionId: "peoplebox" },
@@ -56,10 +56,11 @@ async function bookData() {
                 if (!doc) return;
 
                 box.innerHTML = `<img src="${doc.thumbnail}">
-                        <p>${doc.title}</p>
+                        <h5>${doc.title}</h5>
                         `
             });
         }
+
     } catch (error) {
         console.error('에러 발생:', error);
     }
@@ -77,4 +78,5 @@ tabItems.forEach((tab, i) => {
         });
     });
 });
+
 

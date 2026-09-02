@@ -141,7 +141,7 @@ var swiper = new Swiper('.swiper17', {
           prevEl: '.swiper-button-prev',
         },
         pagination: {
-          el: '.swiper-pagination',
+          el: '#slider17 .swiper-pagination',
           clickable: true,
           renderBullet: function (index, className) {
             return '<span class="' + className + '">' + eventtitle[index] + '</span>';
