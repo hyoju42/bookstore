@@ -9,12 +9,12 @@ var swiper = new Swiper('.swiper1_1', {
           disableOnInteraction: false,
         },
         pagination: {
-          el: '.swiper-pagination',
+          el: '.swiper1_1 .swiper-pagination',
           type: 'fraction',
         },
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.swiper1_1 .swiper-button-next',
+          prevEl: '.swiper1_1 .swiper-button-prev',
         },
       });
 
@@ -24,29 +24,45 @@ var swiper = new Swiper('.swiper1_2', {
         spaceBetween: 30,
         loop: true,
         pagination: {
-          el: '.swiper-pagination',
+          el: '.swiper1_2 .swiper-pagination',
         },
       });
 
 // 오늘의 선택
+var todaytitle = ['국내도서','외국도서','eBook','sam','핫트랙스','교보only'];
 var swiper = new Swiper('.swiper2', {
         slidesPerView: 8,
         slidesPerGroup: 1,
         spaceBetween: 30,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '#slider2 .swiper-button-next',
+          prevEl: '#slider2 .swiper-button-prev',
+        },
+        pagination: {
+          el: '#swiper2 .swiper-pagination',
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + todaytitle[index] + '</span>';
+          },
         },
       });
 
 // MD선택
+var mdtitle = ['국내도서','외국도서','eBook','sam','핫트랙스','교보only'];
 var swiper = new Swiper('.swiper4', {
         slidesPerView: 6,
         slidesPerGroup: 6,
-        spaceBetween: 30,
+        spaceBetween: 40,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '#slider4 .swiper-button-next',
+          prevEl: '#slider4 .swiper-button-prev',
+        },
+        pagination: {
+          el: '#slider4 .swiper-pagination',
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + mdtitle[index] + '</span>';
+          },
         },
       });
 
@@ -56,8 +72,8 @@ var swiper = new Swiper('.swiper5', {
         slidesPerGroup: 6,
         spaceBetween: 30,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '#slider5 .swiper-button-next',
+          prevEl: '#slider5 .swiper-button-prev',
         },
       });
 
@@ -67,8 +83,8 @@ var swiper = new Swiper('.swiper6', {
         slidesPerGroup: 6,
         spaceBetween: 30,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '#slider6 .swiper-button-next',
+          prevEl: '#slider6 .swiper-button-prev',
         },
       });
 
@@ -78,8 +94,8 @@ var swiper = new Swiper('.swiper8', {
         slidesPerGroup: 6,
         spaceBetween: 30,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '#slider8 .swiper-button-next',
+          prevEl: '#slider8 .swiper-button-prev',
         },
       });
 
@@ -89,12 +105,10 @@ var swiper = new Swiper('.swiper9', {
         slidesPerGroup: 6,
         spaceBetween: 30,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '#slider9 .swiper-button-next',
+          prevEl: '#slider9 .swiper-button-prev',
         },
       });
-
-
 
 // 바로출판
 var swiper = new Swiper('.swiper14', {
@@ -102,8 +116,8 @@ var swiper = new Swiper('.swiper14', {
         slidesPerGroup: 6,
         spaceBetween: 30,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '#slider14 .swiper-button-next',
+          prevEl: '#slider14 .swiper-button-prev',
         },
       });
 
@@ -113,8 +127,8 @@ var swiper = new Swiper('.swiper15', {
         slidesPerGroup: 6,
         spaceBetween: 30,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '#slider15 .swiper-button-next',
+          prevEl: '#slider15 .swiper-button-prev',
         },
       });
 
@@ -124,8 +138,8 @@ var swiper = new Swiper('.swiper16', {
         slidesPerGroup: 5,
         spaceBetween: 30,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '#slider16 .swiper-button-next',
+          prevEl: '#slider16 .swiper-button-prev',
         },
       });
 

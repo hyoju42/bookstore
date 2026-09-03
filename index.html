@@ -30,27 +30,42 @@
             </div>
 
             <!-- 메뉴창 -->
-            <div class="head1">
-                <nav>
-                    <ul class="menu">
-                        <li id="white"></li>
-                        <li id="Menu1">교보문고</li>
-                        <li id="Menu2">eBook</li>
-                        <li id="Menu3">sam</li>
-                        <li id="Menu4">핫트렉스</li>
-                        <li id="Menu5">바로출판</li>
-                    </ul>
-                </nav>
-                <nav class="headLog">
-                    <ul class="log">
-                        <li>회원가입</li>
-                        <li>로그인</li>
-                        <li class="">회원혜택</li>
-                        <li>주문배송</li>
-                        <li>매장안내</li>
-                        <li>고객센터</li>
-                    </ul>
-                </nav>
+            <div id="fullhead">
+                <div class="head1">
+                    <li id="whitespace"></li>
+                    <nav>
+                        <ul class="menu">
+                            <li id="white">
+                                <svg><path d="M-360 206.998V0.022915L159.58 0.022915C159.58 0.022915 179.08 -1.35128 188.066 17.1839C198.123 37.9462 207.811 42 221.891 42L1560 41.8008V207L-360 206.998Z" fill="white"></path></svg>
+                            </li>
+                            <li id="Menu1">
+                                <svg><path d="M0 0.0173792H84.361C84.361 0.0173792 99.2952 -1.02301 106.196 12.9956C113.924 28.6956 121.181 32 132 32H0V0.0173792Z" transform="translate(0 0)" fill="#474BAA"></path><text x="35" y="15" dy=".5em" fill="#ffffff" >교보문고</text></svg> 
+                            </li>
+                            <li id="Menu2">
+                                <svg><path d="M135.995 31.9952H47.0166C44.445 32.0391 41.8775 31.7836 39.3696 31.2348C36.9695 30.6886 34.6941 29.7228 32.6571 28.3846C28.2668 25.4961 24.4518 20.607 20.6519 12.9973C18.4194 8.32105 14.5528 4.54662 9.72679 2.33129C6.67335 0.953423 3.36879 0.167557 0 0.0179913H87.913C88.0047 0.0121735 88.2475 0 88.6253 0C91.927 0.0355248 95.1902 0.687677 98.234 1.91939C100.57 2.86606 102.726 4.18222 104.61 5.81403C106.91 7.84018 108.776 10.2795 110.104 12.9945C113.898 20.6042 117.712 25.4932 122.103 28.3818C124.139 29.7198 126.413 30.6856 128.812 31.232C131.169 31.7519 133.582 32.0066 136 31.9904L135.995 31.9952Z" transform="translate(0 0)" fill="#3F5ED5"></path><text x="48" y="14" dy=".5em" fill="#ffffff">eBook</text></svg>
+                            </li>
+                            <li id="Menu3">
+                                <svg><path d="M135.995 31.9952H47.0166C44.445 32.0391 41.8775 31.7836 39.3696 31.2348C36.9695 30.6886 34.6941 29.7228 32.6571 28.3846C28.2668 25.4961 24.4518 20.607 20.6519 12.9973C18.4194 8.32105 14.5528 4.54662 9.72679 2.33129C6.67335 0.953423 3.36879 0.167557 0 0.0179913H87.913C88.0047 0.0121735 88.2475 0 88.6253 0C91.927 0.0355248 95.1902 0.687677 98.234 1.91939C100.57 2.86606 102.726 4.18222 104.61 5.81403C106.91 7.84018 108.776 10.2795 110.104 12.9945C113.898 20.6042 117.712 25.4932 122.103 28.3818C124.139 29.7198 126.413 30.6856 128.812 31.232C131.169 31.7519 133.582 32.0066 136 31.9904L135.995 31.9952Z" transform="translate(0 0)" fill="#1EA5A8"></path><text x="53" y="13.5" dy=".5em" fill="#ffffff" >sam</text></svg>
+                            </li>
+                            <li id="Menu4">
+                                <svg><path d="M135.995 31.9952H47.0166C44.445 32.0391 41.8775 31.7836 39.3696 31.2348C36.9695 30.6886 34.6941 29.7228 32.6571 28.3846C28.2668 25.4961 24.4518 20.607 20.6519 12.9973C18.4194 8.32105 14.5528 4.54662 9.72679 2.33129C6.67335 0.953423 3.36879 0.167557 0 0.0179913H87.913C88.0047 0.0121735 88.2475 0 88.6253 0C91.927 0.0355248 95.1902 0.687677 98.234 1.91939C100.57 2.86606 102.726 4.18222 104.61 5.81403C106.91 7.84018 108.776 10.2795 110.104 12.9945C113.898 20.6042 117.712 25.4932 122.103 28.3818C124.139 29.7198 126.413 30.6856 128.812 31.232C131.169 31.7519 133.582 32.0066 136 31.9904L135.995 31.9952Z" transform="translate(0 0)" fill="#E8422F"></path><text x="42" y="15" dy=".5em" fill="#ffffff">핫트랙스</text></svg>
+                            </li>
+                            <li id="Menu5">
+                                <svg><path d="M121.828 28.7996C123.66 30.0032 125.679 30.9125 127.806 31.4952H47.0166V31.4951L47.0081 31.4952C44.4759 31.5385 41.9478 31.287 39.4784 30.7468C37.1367 30.2136 34.9175 29.2714 32.9317 27.9667C28.6481 25.1483 24.8828 20.35 21.1012 12.7779C18.8166 7.99502 14.8635 4.13906 9.93539 1.87688L9.93539 1.87687L9.93245 1.87555C8.72698 1.33158 7.48321 0.878194 6.2122 0.517991H87.913H87.9289L87.9447 0.516988C88.0256 0.511856 88.2569 0.500058 88.6226 0.5C91.8611 0.535181 95.0615 1.17502 98.0463 2.38279C100.332 3.30878 102.439 4.59572 104.281 6.1904C106.531 8.17342 108.356 10.5597 109.654 13.2141L109.656 13.2176C113.469 20.8625 117.331 25.8412 121.828 28.7995L121.828 28.7996Z" transform="translate(0 0)" fill="#ffffff" stroke="#d5d5d5"></path><text x="42" y="15" dy=".5em" fill="#767676">바로출판</text></svg>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="headLog">
+                        <ul class="log">
+                            <li>회원가입</li>
+                            <li>로그인</li>
+                            <li class="">회원혜택</li>
+                            <li>주문배송</li>
+                            <li>매장안내</li>
+                            <li>고객센터</li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
 
             <!-- 검색창 -->
@@ -60,7 +75,8 @@
                         <img src="./img/logo.svg" class="logo">
                     </div>
                     <div id="search">
-                        <div id="searchp">통합검색</div>
+                        <div id="searchp">통합검색
+                        </div>
                         <input type="text" id="search_input" placeholder="첫 내한 전시 화가 웨인 티보 아트북">
                         <div id="sicon">
                             <img src="./img/search.png">
@@ -213,14 +229,6 @@
             <div id="today">
                 <div id="today1">
                     <h2>오늘의 선택</h2>
-                    <ul>
-                        <li>국내도서</li>
-                        <li>외국도서</li>
-                        <li>eBook</li>
-                        <li>sam</li>
-                        <li>핫트랙스</li>
-                        <li>교보only</li>
-                    </ul>
                 </div>
                 <h5>더보기+</h5>
             </div>
@@ -268,9 +276,10 @@
                             <div class="box"></div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
 
@@ -289,14 +298,6 @@
             <div id="md">
                 <div id="md1">
                     <h2>MD들이 신중하게 골랐어요</h2>
-                    <ul>
-                        <li>국내도서</li>
-                        <li>외국도서</li>
-                        <li>eBook</li>
-                        <li>sam</li>
-                        <li>핫트랙스</li>
-                        <li>교보only</li>
-                    </ul>
                 </div>
                 <h5>더보기+</h5>                   
             </div>
@@ -316,10 +317,35 @@
                         <div class="swiper-slide"><div class="box"></div></div>
                         <div class="swiper-slide"><div class="box"></div></div>
                         <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
 
@@ -362,9 +388,9 @@
                         <div class="swiper-slide"><div class="box"></div></div>
                         <div class="swiper-slide"><div class="box"></div></div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
 
@@ -391,9 +417,9 @@
                         <div class="swiper-slide"><div class="box"></div></div>
                         <div class="swiper-slide"><div class="box"></div></div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
 
@@ -478,9 +504,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
 
@@ -507,9 +533,9 @@
                         <div class="swiper-slide"><div class="box"></div></div>
                         <div class="swiper-slide"><div class="box"></div></div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
 
@@ -565,138 +591,140 @@
         </div>
 
         <!-- 베스트 -->
-        <section id="best">
-            <div id="besttext">
-                <div id="bestlist">
-                    <h3>베스트</h3>
-                    <ul class="booktab">
-                        <li>전체</li>
-                        <li>국내도서</li>
-                        <li>외국도서</li>
-                        <li>eBook</li>
-                        <li>sam</li>
-                        <li>핫트랙스</li>
-                        <li>교보only</li>
-                    </ul>
-                    <h6>스테디셀러</h6>
-                    <ul class="booktab">
-                        <li>국내도서</li>
-                        <li>외국도서</li>
-                    </ul>
+        <div id="fulltab">
+            <section id="best">
+                <div id="besttext">
+                    <div id="bestlist">
+                        <h3>베스트</h3>
+                        <ul class="booktab">
+                            <li>전체</li>
+                            <li>국내도서</li>
+                            <li>외국도서</li>
+                            <li>eBook</li>
+                            <li>sam</li>
+                            <li>핫트랙스</li>
+                            <li>교보only</li>
+                        </ul>
+                        <h6>스테디셀러</h6>
+                        <ul class="booktab">
+                            <li>국내도서</li>
+                            <li>외국도서</li>
+                        </ul>
+                    </div>
+                    <h5>더보기+</h5>
                 </div>
-                <h5>더보기+</h5>
-            </div>
-            <div id="bestarea">
-                <article id="tab1">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                </article>
-                <article id="tab2">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                </article>
-                <article id="tab3">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                </article>
-                <article id="tab4">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                </article>
-                <article id="tab5">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                </article>
-                <article id="tab6">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                </article>
-                <article id="tab7">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                </article>
-                <article id="tab8">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                </article>
-                <article id="tab9">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                </article>
-            </div>
-        </section>
+                <div id="bestarea">
+                    <article id="tab1">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </article>
+                    <article id="tab2">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </article>
+                    <article id="tab3">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </article>
+                    <article id="tab4">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </article>
+                    <article id="tab5">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </article>
+                    <article id="tab6">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </article>
+                    <article id="tab7">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </article>
+                    <article id="tab8">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </article>
+                    <article id="tab9">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </article>
+                </div>
+            </section>
+        </div>
 
         <!-- 바로출판&슬라이더14 -->
         <div id="slider14">
@@ -716,10 +744,14 @@
                         <div class="swiper-slide"><div class="box"></div></div>
                         <div class="swiper-slide"><div class="box"></div></div>
                         <div class="swiper-slide"><div class="box"></div></div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                        <div class="swiper-slide"><div class="box"></div></div>
+                    </div> 
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
 
@@ -776,9 +808,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
 
@@ -853,10 +885,10 @@
                             <img src="./img/cast/cast10.jpg">
                             <h5>다른 과학에 대한 가능성『STS 개념어 사전』홍성욱</h5>
                             </div></div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    </div> 
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
 
@@ -889,25 +921,23 @@
             </div>
         </div>
 
-        
         <footer>
-            <hr>
-            <div id="foot1">
-                <ul>
-                    <li>
-                        <h4>공지사항</h4>
-                    </li>
-                    <li>회원등급 산정 순수구매액'교보e캐시'적용 기준 변경 안내</li>
-                </ul>
-            
-                <ul>
-                    <li>
-                        <h4>당첨자발표</h4>
-                    </li>
-                    <li>[인문/교양]이정모 작가 '극한 진화의 세계' 랜선팬사인회 당첨자 발표</li>
-                </ul>            
+            <div id="fullfoot">
+                <div id="foot1">
+                    <ul>
+                        <li>
+                            <h4>공지사항</h4>
+                        </li>
+                        <li>회원등급 산정 순수구매액'교보e캐시'적용 기준 변경 안내</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>당첨자발표</h4>
+                        </li>
+                        <li>[인문/교양]이정모 작가 '극한 진화의 세계' 랜선팬사인회 당첨자 발표</li>
+                    </ul>
+                </div>
             </div>
-            <hr>
             <div id="foot2">
                 <div id="foot2_1">
                     <div id="foot2_1_1">

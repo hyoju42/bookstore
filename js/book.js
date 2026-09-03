@@ -56,7 +56,12 @@ async function bookData() {
                 if (!doc) return;
 
                 box.innerHTML = `<img src="${doc.thumbnail}">
+                        <div>
                         <h5>${doc.title}</h5>
+                        ${sectionId=="swiper2"?
+                            `<p>${doc.contents}</p>
+                            `:''
+                        }</div>
                         `
             });
         }
