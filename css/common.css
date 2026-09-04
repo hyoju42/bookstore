@@ -41,11 +41,11 @@
 }
 
 #swiper2 .swiper-pagination {
-  width: 400px;
+  width: 420px;
   height: 50px; display: flex;
-  top:-50px; left: 135px;
+  top:-50px; left: 135px; justify-content: space-between;
 }
-#swiper2 .swiper-pagination span{width: 25%;}
+
 #swiper2 .swiper-pagination-bullet {
     width: auto;
     height: auto;
@@ -62,11 +62,10 @@
 }
 
 #slider4 .swiper-pagination {
-  width: 400px;
+  width: 420px;
   height: 50px; display: flex;
-  top:-40px; left: 290px;
+  top:-40px; left: 290px; justify-content: space-between;
 }
-#slider4 .swiper-pagination span{width: 25%;}
 #slider4 .swiper-pagination-bullet {
     width: auto;
     height: auto;
@@ -83,11 +82,10 @@
 }
 
 #swiper17 .swiper-pagination {
-  width: 240px;
-  height: 30px;
-  top:-50px; left: 250px;
+  width: 200px;
+  height: 30px; display: flex;
+  top:-50px; left: 260px; justify-content: space-between;
 }
-#swiper17 .swiper-pagination span{width: 25%;}
 #swiper17 .swiper-pagination-bullet {
     width: auto;
     height: auto;
@@ -106,14 +104,15 @@
 body{font-family: "Noto Sans KR","Roboto", sans-serif;}
 h5{font-size: 11pt; text-align: left;}
 
-/* 헤더 */
-header{width: 100%; height: 280px; margin: 0 auto;}
 /* 헤더 제일 위 광고 */
 .headAd{width: 100%; height: 70px; margin: 0 auto; background-color: #F2F2F2; display: flex; justify-content: space-around; cursor: pointer;}
 
+/* 헤더 */
+header{width: 100%; height: 210px; margin: 0 auto;}
+
 /* 메뉴창 */
 #fullhead{width: 100%; background: linear-gradient(90deg,white calc(50vw - 600px),#F4F4F4 calc(50vw - 600px));}
-.head1{width: 1200px; height: 45px; margin: 0 auto; display: flex; justify-content: space-between; text-align: center;}
+.head1{width: 1200px; height: 43px; margin: 0 auto; display: flex; justify-content: space-between; text-align: center; background-color: #F4F4F4;}
 .menu{width: 660px; height: 40px; display: flex; text-align: center; align-items: end;}
 #white{width: 170px; height: 40px; background-color: white; z-index: 1;}
 #Menu1{width: 85px; height: 30px; font-size: 14px; font-weight: bold; color: white; cursor: pointer;}
@@ -121,18 +120,18 @@ header{width: 100%; height: 280px; margin: 0 auto;}
 #Menu3{width: 85px; height: 30px; font-size: 14px; font-weight: bold; color: white; cursor: pointer;}
 #Menu4{width: 85px; height: 30px; font-size: 14px; font-weight: bold; color: white; cursor: pointer;}
 #Menu5{width: 85px; height: 30px; font-size: 14px; color: #595959; cursor: pointer;}
-.log{width: 355px; height: 40px; margin-top: 10px;
-        display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #595959;}
-.log li{cursor: pointer; }
-.log li::after{content: "|"; padding: 8px; font-size: 6pt;}
-.log :last-child::after{content: "";}
-#ghover::after{content: "▼    |"; font-size: 6pt;}
-#ghover:hover::after{content: "▲    |"; font-size: 6pt;}
+.log{width: 365px; height: 43px; display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #595959;}
+.log li{cursor: pointer; position: relative; right: 5px; top: 4px;}
+.log li::before{content: "|"; padding: 8px; font-size: 6pt;}
+.log :first-child::before{content: "";}
+#ghover{position: relative;}
+#ghover::after{content: "▼"; font-size: 6pt; position: relative; left: 2px;}
+#ghover:hover::after{content: "▲"; font-size: 6pt; position: relative; left: 2px;}
 #ghover:hover ul{opacity: 1; visibility: visible;}
-#ghover ul{background-color: white; border-color: #CCCCCC; border-style: solid; border-width: 1px; border-radius: 10px; padding: 5px; text-align: left; position: absolute; opacity: 0; visibility: hidden; z-index: 10;}
+#ghover ul{background-color: white; border-color: #CCCCCC; border-style: solid; border-width: 1px; border-radius: 5px; text-align: left; position: absolute; right: -15px; top: 25px; opacity: 0; visibility: hidden; z-index: 10; height: 140px; width: 120px;}
 #ghover li:hover{text-decoration: underline;}
-.log li ul li::after{content: "";}
-#ghover ul li{padding: 3px;}
+.log li ul li::before{content: "";}
+#ghover ul li{padding: 5px;}
 
 /* 검색창 */
 #head2{width: 1200px; height: 100px; margin: 0 auto; margin-top: 5px; display: flex; justify-content: space-between; align-items: center;}
@@ -143,8 +142,10 @@ header{width: 100%; height: 280px; margin: 0 auto;}
 
 #head2 > #head2_1 > #search > #searchp > ul{position: absolute; background-color: white; border-width: 2px; border-color: black; border-style: solid; border-radius: 10px; margin-top: 20px; padding: 15px; z-index: 50; display: none;}
 #head2 > #head2_1 > #search > #searchp > ul li{width: 80px; padding: 8px; text-align: left;}
-#searchp::after{content: "▼"; margin-left: 6px; margin-right: 6px; font-size: 6pt;}
-#head2 > #head2_1 >#search > #search_input{width: 390px; height: 35px; border: none; outline: none;}
+#searchp::after{content: "▼"; margin-left: 10px; margin-right: 6px; font-size: 6pt;}
+#head2 > #head2_1 >#search > div > #search_input{width: 375px; height: 35px; border: none; outline: none;}
+#head2 > #head2_1 >#search > #search_::before{content: "|"; left: -12px; top: -1px; font-size: 7pt; position: relative;
+color: #D5D5D5;}
 #head2 > #head2_1 >#search > #sicon{width: 55px; height: 40px;}
 #head2 > #head2_1 >#search > #sicon img{width: 30px; height: 30px; margin-top: 5px; cursor: pointer;}
 #head2 > #head2_2{width: 105px; height: 60px; margin: 0; display: flex; justify-content: space-between; align-items: center;}
@@ -154,18 +155,19 @@ header{width: 100%; height: 280px; margin: 0 auto;}
 /* 메뉴창 */
 #head3{width: 1200px; height: 65px; margin: 0 auto; display: flex; justify-content: space-between;}
 .tgreen{color: #2a760c; font-weight: bold;}
+.tgreen::after{content: "•"; position: relative; margin-left: 1px; top: -10px; font-size: 10pt;}
 .head3_1{width: 840px; height: 40px; display: flex; color: #595959;}
 .head3_1 > div img{width: 40px; height: 40px; cursor: pointer;}
-.head3_1 > nav ul{width: 765px; height: 40px; display: flex; justify-content: space-around; align-items: center; cursor: pointer;}
-.head3_1 > nav ul li button{width: 20px; height: 20px; border-radius: 50%; border-color: white; cursor: pointer; border-width: 0;}
+.head3_1 > nav ul{width: 765px; height: 40px; display: flex; position: relative; left: 20px; justify-content: space-around; align-items: center; cursor: pointer;}
+.head3_1 > nav ul li button{width: 20px; height: 20px; border-radius: 50%; border-color: white; cursor: pointer; border-width: 0; position: relative; left: 5px;}
 .head3_2{width: 260px; height: 65px; margin: 0;}
 .head3_2 > nav ul{width: 260px; height: 40px; align-items: center; display: flex; justify-content: space-around; font-size: 10pt; color: #595959;}
 #hhover::after{content: "▼"; margin-left: 6px; font-size: 6pt;}
 .head3_2 > nav ul li{align-items: center; cursor: pointer;}
-#hhover:hover #hhover_img{opacity: 1; visibility: visible;}
+#hhover:hover #hhover_img{opacity: 1; visibility: visible; transform: scale(1); transition:  0.3s ease-in;}
 #hhover:hover{color: black;}
 #hhover:hover::after{content: "▲"; margin-left: 6px; font-size: 6pt; color: black;}
-#hhover_img{position: fixed; top: 270px; left: 0; right: 0; margin: 0 auto; opacity: 0; visibility: hidden; z-index: 10;}
+#hhover_img{position: absolute; top: 270px; left: 0; right: 0; margin: 0 auto; border-radius: 15px; opacity: 1; visibility: hidden; z-index: 10; transform-origin: top right; transform: scale(0.5); transition:  0.1s ease-out;}
 
 /* 슬라이더1 */
 #slider1{width: 1200px; height: 395px; margin: 0 auto; display: flex; justify-content: space-between;}
@@ -174,7 +176,7 @@ header{width: 100%; height: 280px; margin: 0 auto;}
 #slider1 > #slider1_2{width: 260px; height: 370px; background-color: #F7F7F7; border-radius: 10px; cursor: pointer; text-align: center;}
 #slider1 > #slider1_2 > img{width: 270px; height: 260px; cursor: pointer;}
 #slider1 > #slider1_2 > div p{margin-top: 10px; font-size: 10pt; color: #464B97;}
-#slider1 > #slider1_2 > div h6{margin-top: 5px; font-size: 12pt;}
+#slider1 > #slider1_2 > div .adtext{margin-top: 5px; font-size: 12pt; color: #000;;}
 
 /* 카테고리(섹션1) */
 #slideUnder{width: 1200px; height: 145px; margin: 0 auto; display: flex; justify-content: space-around; }
@@ -194,6 +196,8 @@ header{width: 100%; height: 280px; margin: 0 auto;}
 #slider2 > #today > h5{cursor: pointer;}
 #slider2 > #swiper2 {width: 1200px; height: 280px; position:relative;}
 .swiper2 .swiper-slide-active {width: 740px !important; justify-content: space-between;}
+#swiper2 .swiper-pagination-bullet::after{content: "|"; position: relative; left: 13px; font-size: 6pt;}
+#swiper2 .swiper-pagination-bullet:last-child::after{content: "";}
 .swiper2 .swiper-slide-active .box{width: 100% !important; height: 275px !important;  display: flex; align-items: center;}
 .swiper2 .swiper-slide-active .box h5{ margin-left: 20pt; font-size: 22px;}
 .swiper2 .swiper-slide-active .box p{margin-left: 30px; font-size: 16px; margin-top: 30px; color: #595959;}
@@ -212,8 +216,8 @@ header{width: 100%; height: 280px; margin: 0 auto;}
 #slider4 > #md > div > h2 {width: 285px; height: 35px;}
 #slider4 > #md > h5{cursor: pointer;}
 #slider4 > #md > div > ul {width: 410px; height: 30px; display: flex; justify-content: space-evenly; align-items: end; color: #595959; font-size: 11pt;}
-#slider4 > #md > div li::after{content: "|"; margin-left: 4px; margin-right: 4px; font-size: 6pt;}
-#slider4 > #md > div li:last-child::after{content: "";}
+#swiper4 .swiper-pagination-bullet::after{content: "|"; position: relative; left: 13px; font-size: 6pt;}
+#swiper4 .swiper-pagination-bullet:last-child::after{content: "";}
 #slider4 > #swiper4 {width: 1200px; height: 320px; position:relative;}
 #slider5 > #swiper4 > .box img {width: 190px; height: 260px;}
 #slider5 > #swiper4 > .box h5{height: 55px;}
@@ -348,6 +352,8 @@ header{width: 100%; height: 280px; margin: 0 auto;}
 #slider17 > #event{width: 1200px; height: 60px; display: flex; justify-content: space-between;}
 #slider17 > #event> #event1{width: 460px; height: 35px; display: flex; justify-content: space-between; align-items: center;}
 #slider17 > #event > #event1 > h2 {width: 240px; height: 35px;}
+#swiper17 .swiper-pagination-bullet::after{content: "|"; position: relative; left: 13px; font-size: 6pt;}
+#swiper17 .swiper-pagination-bullet:last-child::after{content: "";}
 #slider17 > #event > h5{cursor: pointer;}
 #slider17 > #swiper17 {width: 1200px; height: 175px; position:relative;}
 #slider17 > #swiper17 img{width: 380px; height: 175px; border-radius: 15px; cursor: pointer;}
@@ -375,9 +381,10 @@ header{width: 100%; height: 280px; margin: 0 auto;}
 #foot2_1_3 > div{height: 90px;}
 #foot2_1_3 > div > div{display: flex;}
 #foot2_1_3 > div > div ul{width: 690px; height: 25px; display: flex; font-size: 8.5pt; color: #595959;}
-#foot2_1_3 li::after{content: "|"; padding: 6px; font-size: 6pt; color: #595959;}
-#foot2_1_3 :last-child::after{content: "";}
-#foot2_1_3> div button{height: 22px; background-color: white; border: 1px solid #CCCCCC; justify-content: center; align-items: center; border-radius: 5px; font-size: 8.5pt; color: #595959; cursor: pointer;}
+#foot2_1_3 li{position: relative; left: -12px;}
+#foot2_1_3 li::before{content: "|"; padding: 6px; font-size: 6pt; color: #595959;}
+#foot2_1_3 :first-child::before{content: "";}
+#foot2_1_3> div button{width: 95px; height: 22px; background-color: white; border: 1px solid #CCCCCC; justify-content: center; align-items: center; border-radius: 5px; font-size: 8.5pt; color: #595959; cursor: pointer; position: relative; top: -2px;}
 #foot2_1_3> div > p{font-size: 8.5pt; color: #595959;}
 #foot2_1_3> p {width: 140px; height: 40px; font-size: 8.5pt; color: #595959; align-items: flex-end;}
 
@@ -388,7 +395,7 @@ header{width: 100%; height: 280px; margin: 0 auto;}
 #foot2_2_2{width: 410px; height: 90px;}
 #foot2_2_2> div{width: 410px; height: 30px; display: flex; font-size: 9pt; color: #595959;}
 #foot2_2_2> p{width: 410px; height: 40px; font-size: 9pt; color: #595959;}
-#foot2_2_2> div button{width: 90px; height: 25px; margin-left: 10px; background-color: white; border: 2px solid #CCCCCC; outline: none; justify-content: center; align-items: center; border-radius: 5px; font-size: 8pt; cursor: pointer;}
+#foot2_2_2> div button{width: 90px; height: 23px; margin-left: 10px; background-color: white; border: 2px solid #CCCCCC; outline: none; justify-content: center; align-items: center; border-radius: 5px; font-size: 8pt; cursor: pointer; position: relative; top: -3px;}
 #foot2_2_3{width: 340px; height: 30px; display: flex;}
 #foot2_2_3 > #ISMSmark{width: 115px; height: 30px; display: flex;}
 #foot2_2_3 div p{width: 85px; height: 30px; font-size: 7pt; color: #595959;}

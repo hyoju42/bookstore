@@ -1,10 +1,4 @@
 @charset "utf-8";
 
-#slider1_1{width: 910px; height: 390px;}
-#slider1_2{width: 280px; height: 385px;}
 
-
-#slider1_1 .swiper-pagination-bullet-active{background-color: red;}
-
-#slider1_1 .swiper-slide{justify-content: space-evenly;}
 
