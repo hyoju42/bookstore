@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* 메인 hover */
+#subtop{width: 100%; border-top-color: #CCCCCC; border-top-width: 1px; border-top-style: solid;}
+#sub1{width: 1200px; margin: 0 auto;}
+#sub1 > nav ul{width: 400px; height: 60px; display: flex; justify-content: space-between; align-items: center;}
+#sub1 > nav ul li::before{content: "/"; position: relative; right: 10px;}
+
+/* 메인 책 화면 */
+#navx{width: 1220px; height: 800px; display: flex; align-items: center; justify-content: space-between;}
+#navx > #sub1_1{width: 350px; height: 450px;}
+#navx > #sub1_1 > div > ul > li{padding: 10px; font-size: 10pt;}
+#navx > #sub1_1 > div > ul > li > #flower{width: 350px; height: 50px; background-color: white; border-color: #CCCCCC; border-style: solid; border-width: 1px; border-radius: 10px; font-size: 13pt; left: 0;}
+#navx > #sub1_1 > div > ul > li > button{width: 60px; height: 30px; background-color: white; border-color: #CCCCCC; border-style: solid; border-width: 1px; border-radius: 10px; position: relative; left: 80px;}
+#navx > #sub1_1 > div > ul > li > #buy{width: 350px; height: 150px; background-color: #CCCCCC; padding: 10px; border-radius: 10px;}
+#navx > #sub1_1 > div > ul > li > #buy > ul{font-size: 12pt; padding: 5px;}
+#navx > #sub1_1 > div > ul > li > #buy > ul > li{font-size: 9.5pt; padding: 7px;}
+#navx > #sub1_1 > div > ul > li > #readtrend{width: 350px; height: 45px; background-color: antiquewhite; border-radius: 10px; padding: 10px; font-size: 11pt; font-weight: 600;}
+#navx > #sub1_1 > div > ul > li > #readtrend > p::after{content:'>'; right: -170px; position: relative;}
+
+
+#navx > #sub1_2{width: 450px; height: 750px;}
+#navx > #sub1_2 > div > ul > li > h3{height: 55px; font-size: 20pt; text-align: center;}
+#navx > #sub1_2 > div > ul > li > p{height: 45px; font-size: 11pt; text-align: center;}
+#navx > #sub1_2 > div > ul > #bookprice{width: 450px; height: 70px; display: flex; justify-content: space-around; background-color: #CCCCCC; border-radius: 10px; text-align: center; padding: 10px;}
+#navx > #sub1_2 > div > ul > li> #api_bookimg{width: 380px; height: 450px; background-color: antiquewhite; margin-top: 35px; align-items: center;}
+#navx > #sub1_2 > div > ul > li> button{width: 70px; height: 30px; margin-top: 30px; background-color: white;}
+
+#navx > #sub1_3{width: 350px; height: 500px;}
+#navx > #sub1_3 > ul > li{padding: 10px;}
+#navx > #sub1_3 > ul > li{width: 330px; display: flex; justify-content: space-between;}
+
+/* 정보 */
+#sub2{width: 1200px; margin: 0 auto;}
+#sub2 > #sub2nav > nav > ul{height: 50px;  display: flex; justify-content: space-between; text-align: center;}
+#sub2 > #sub2nav > #sub_2_1{width: 810px; display: flex; justify-content: space-between;}
+.grey_zone{width: 810px; background-color: #CCCCCC;}
+#sub2 > #sub2nav > #sub_2_2 > div > .grey_zone > div{display: flex;}
+#sub2 > #sub2nav > #sub_2_2 > div > .grey_zone > div{display: flex;}
+#sub2 > #sub2nav > #sub_2_3 > #kreview{display: flex;}
+#white_zone{background-color: white;}
