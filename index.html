@@ -32,12 +32,13 @@
             <!-- 메뉴창 -->
             <div id="fullhead">
                 <div class="head1">
-                    <div id="whitespace"></div>
+                    <div id="white">
+                        <svg width="220" height="45"><path d="M-360 206.998V0.022915L159.58 0.022915C159.58 0.022915 179.08 -1.35128 188.066 17.1839C198.123 37.9462 207.811 42 221.891 42L1560 41.8008V207L-360 206.998Z" fill="white"></path>
+                        </svg>
+                    </div>
                     <nav>
                         <ul class="menu">
-                            <li id="white">
-                                <svg><path d="M-360 206.998V0.022915L159.58 0.022915C159.58 0.022915 179.08 -1.35128 188.066 17.1839C198.123 37.9462 207.811 42 221.891 42L1560 41.8008V207L-360 206.998Z" fill="white"></path></svg>
-                            </li>
+                            
                             <li id="Menu1">
                                 <svg><path d="M0 0.0173792H84.361C84.361 0.0173792 99.2952 -1.02301 106.196 12.9956C113.924 28.6956 121.181 32 132 32H0V0.0173792Z" transform="translate(0 0)" fill="#474BAA"></path><text x="35" y="15" dy=".5em" fill="#ffffff" >교보문고</text></svg> 
                             </li>
@@ -59,7 +60,15 @@
                         <ul class="log">
                             <li>회원가입</li>
                             <li>로그인</li>
-                            <li class="">회원혜택</li>
+                            <li id="ghover">회원혜택
+                                <ul>
+                                    <li>교보북클럽</li>
+                                    <li>등급 혜택</li>
+                                    <li>신규회원 혜택</li>
+                                    <li>Prestige Lounge</li>
+                                    <li>제휴 혜택</li>
+                                </ul>
+                            </li>
                             <li>주문배송</li>
                             <li>매장안내</li>
                             <li>고객센터</li>
@@ -120,7 +129,9 @@
                         <ul>
                             <li>오늘의 미션</li>
                             <li>할인혜택</li>
-                            <li>최후의 1인은?</li>
+                            <li id="hhover">읽는 사람들 2회차
+                                <img src="./img/head_hover.jpg" id="hhover_img">
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -597,18 +608,18 @@
                     <div id="bestlist">
                         <h3>베스트</h3>
                         <ul class="booktab">
-                            <li>전체</li>
-                            <li>국내도서</li>
-                            <li>외국도서</li>
-                            <li>eBook</li>
-                            <li>sam</li>
-                            <li>핫트랙스</li>
-                            <li>교보only</li>
+                            <li class="bactive">전체</li>
+                            <li class="bactive">국내도서</li>
+                            <li class="bactive">외국도서</li>
+                            <li class="bactive">eBook</li>
+                            <li class="bactive">sam</li>
+                            <li class="bactive">핫트랙스</li>
+                            <li class="bactive">교보only</li>
                         </ul>
                         <h6>스테디셀러</h6>
                         <ul class="booktab">
-                            <li>국내도서</li>
-                            <li>외국도서</li>
+                            <li class="bactive">국내도서</li>
+                            <li class="bactive">외국도서</li>
                         </ul>
                     </div>
                     <h5>더보기+</h5>
@@ -953,7 +964,7 @@
                             <ul>
                                 <li>회사소개</li>
                                 <li>이용약관</li>
-                                <li>개인정보처리방침</li>
+                                <li id="indi">개인정보처리방침</li>
                                 <li>청소년보호정책</li>
                                 <li>대량구매서비스</li>
                                 <li>협력사여러분</li>
